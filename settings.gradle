@@ -1,0 +1,38 @@
+
+include ':app'
+project(':app').projectDir = new File('ContactsApp/app')
+
+include ':iopj'
+project(':iopj').projectDir = new File('ContactsApp/iopj')
+
+include ':lib_sdk'
+project(':lib_sdk').projectDir = new File('ContactsApp/lib_sdk')
+
+include ':non-blocking-client'
+project(':non-blocking-client').projectDir = new File('ContactsApp/non-blocking-client')
+
+include ':furszy_ui_lib'
+project(':furszy_ui_lib').projectDir = new File('ContactsApp/furszy_ui_lib')
+
+include ':libsodium-jni-aar-1.0.3'
+project(':libsodium-jni-aar-1.0.3').projectDir = new File('ContactsApp/android-connect/libsodium-jni-aar-1.0.3')
+
+include ':connect_sdk_android'
+project(':connect_sdk_android').projectDir = new File('ContactsApp/android-connect/connect_sdk_android')
+
+
+include ':connect_sdk_android_client'
+project(':connect_sdk_android_client').projectDir = new File('ContactsApp/android-connect/connect_sdk_android_client')
+
+include ':connect_sdk_android_shared_library'
+project(':connect_sdk_android_shared_library').projectDir = new File('ContactsApp/android-connect/connect_sdk_android_shared_library')
+
+
+// ################# Chat now
+
+include ':chat_app'
+project(':chat_app').projectDir = new File('Connect-chat/app')
+
+include ':connect_client'
+project(':connect_client').projectDir = new File('Connect-chat/connect_client')
+
